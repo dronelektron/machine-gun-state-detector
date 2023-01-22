@@ -15,11 +15,12 @@ Allows you to detect machine gun deploying/undeploying
 
 Called when the machine gun's state has changed
 
-* client - Index of the client whose machine gun state has changed
+* client - Index of the client
+* weapon - Index of the machine gun
 * isDeployed - Is the machine gun deployed or undeployed
 
 ```
-forward void OnMachineGunStateChanged(int client, bool isDeployed);
+forward void OnMachineGunStateChanged(int client, int weapon, bool isDeployed);
 ```
 
 ### Usage example
@@ -43,6 +44,6 @@ public void OnAllPluginsLoaded() {
     }
 }
 
-public void OnMachineGunStateChanged(int client, bool isDeployed) {
-    PrintToChat(client, "Machine gun deployed - %s", isDeployed ? "yes" : "no");
+public void OnMachineGunStateChanged(int client, int weapon, bool isDeployed) {
+    PrintToChat(client, "Machine gun %d deployed: %s", weapon, isDeployed ? "yes" : "no");
 }
