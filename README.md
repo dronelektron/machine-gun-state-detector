@@ -9,7 +9,7 @@ Allows you to detect machine gun deploying/undeploying
 ### Installation
 
 * Download latest [release](https://github.com/dronelektron/machine-gun-state-detector/releases) (compiled for SourceMod 1.11)
-* Extract "plugins" folder to "addons/sourcemod" folder of your server
+* Extract "plugins" and "gamedata" folders to "addons/sourcemod" folder of your server
 
 ### API
 
