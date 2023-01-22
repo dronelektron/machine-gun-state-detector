@@ -44,5 +44,5 @@ public void OnAllPluginsLoaded() {
 }
 
 public void OnMachineGunStateChanged(int client, bool isDeployed) {
-    PrintToChat(client, "Machine gun state changed - %s", isDeployed ? "yes" : "no");
+    PrintToChat(client, "Machine gun deployed - %s", isDeployed ? "yes" : "no");
 }
