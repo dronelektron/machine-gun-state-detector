@@ -1,0 +1,36 @@
+"Games"
+{
+    "dod"
+    {
+        "Signatures"
+        {
+            "CDODBipodWeapon::DeployBipod"
+            {
+                "library"   "server"
+                "linux"     "@_ZN15CDODBipodWeapon11DeployBipodEfP11CBaseEntityff"
+            }
+            "CDODBipodWeapon::UndeployBipod"
+            {
+                "library"   "server"
+                "linux"     "@_ZN15CDODBipodWeapon13UndeployBipodEv"
+            }
+        }
+        "Functions"
+        {
+            "DeployBipod"
+            {
+                "signature" "CDODBipodWeapon::DeployBipod"
+                "callconv"  "thiscall"
+                "return"    "void"
+                "this"      "entity"
+            }
+            "UndeployBipod"
+            {
+                "signature" "CDODBipodWeapon::UndeployBipod"
+                "callconv"  "thiscall"
+                "return"    "void"
+                "this"      "entity"
+            }
+        }
+    }
+}
