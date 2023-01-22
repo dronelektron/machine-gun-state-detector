@@ -42,7 +42,7 @@ void DynamicHook_CreateUndeployBipod(Handle gameConfig) {
 public MRESReturn DynamicHook_DeployBipod(int weapon) {
     int client = DynamicHook_GetWeaponOwner(weapon);
 
-    Api_OnMachineGunStateChanged(client, DEPLOYED_YES);
+    Api_OnMachineGunStateChanged(client, weapon, DEPLOYED_YES);
 
     return MRES_Ignored;
 }
@@ -50,7 +50,7 @@ public MRESReturn DynamicHook_DeployBipod(int weapon) {
 public MRESReturn DynamicHook_UndeployBipod(int weapon) {
     int client = DynamicHook_GetWeaponOwner(weapon);
 
-    Api_OnMachineGunStateChanged(client, DEPLOYED_NO);
+    Api_OnMachineGunStateChanged(client, weapon, DEPLOYED_NO);
 
     return MRES_Ignored;
 }
