@@ -7,11 +7,13 @@
             "CDODBipodWeapon::DeployBipod"
             {
                 "library"   "server"
+                "windows"   "\x55\x8B\xEC\xF3\x0F\x10\x45\x08\x56\x8B\x75"
                 "linux"     "@_ZN15CDODBipodWeapon11DeployBipodEfP11CBaseEntityff"
             }
             "CDODBipodWeapon::UndeployBipod"
             {
                 "library"   "server"
+                "windows"   "\x55\x8B\xEC\x51\x56\x57\x8B\xF9\x8B\x37\xFF"
                 "linux"     "@_ZN15CDODBipodWeapon13UndeployBipodEv"
             }
         }
@@ -23,6 +25,25 @@
                 "callconv"  "thiscall"
                 "return"    "void"
                 "this"      "entity"
+                "arguments"
+                {
+                    "flHeight"
+                    {
+                        "type"  "float"
+                    }
+                    "pDeployedOn"
+                    {
+                        "type"  "cbaseentity"
+                    }
+                    "flYawLimitLeft"
+                    {
+                        "type"  "float"
+                    }
+                    "flYawLimitRight"
+                    {
+                        "type"  "float"
+                    }
+                }
             }
             "UndeployBipod"
             {
