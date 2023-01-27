@@ -31,7 +31,7 @@ forward void OnMachineGunStateChanged(int client, int weapon, bool isDeployed);
 #define MACHINE_GUN_STATE_DETECTOR "machine-gun-state-detector"
 
 public Plugin myinfo = {
-    name = "MG state notifier",
+    name = "Machine gun state detector (test)",
     author = "Dron-elektron",
     description = "Prints a message to the player when the state of the machine gun has changed",
     version = "",
